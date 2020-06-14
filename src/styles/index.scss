@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --scrollbarBG: rgba(255, 255, 255, 0);
+  --thumbBG: #90a4ae;
+}
+body::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+}
+body::-webkit-scrollbar:hover {
+  background: transparent;
+  width: 10px;
+  transition: all 2s;
+}
+body::-webkit-scrollbar-thumb {
+  display: block !important;
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.App {
+  .header {
+    background-image: url("https://www.arcgis.com/sharing/rest/content/items/779d8664f209431ca81dfd1e3d9d4c1e/resources/1567527975387.jpeg?w=3492");
+    background-repeat: no-repeat;
+    background-size: 100% 900px;
+    height: 2227.7px;
+    .overlay {
+      background: #000000;
+      opacity: 55%;
+      width: 100%;
+      height: 2227.7px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+    .navbar {
+      color: #ffffff;
+      background: linear-gradient(180deg, #002233 0%, rgba(1, 56, 84, 0) 100%);
+      width: 100%;
+      height: 64px;
+      fill: rgba(1, 56, 84, 0);
+      .buttons {
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        .nav-item,
+        .nav-link {
+          height: 30px;
+          color: #ffffff;
+          font-family: NunitoSans;
+          font-size: 18px;
+          line-height: 22px;
+          text-align: center;
+          padding: 0 10px 0 10px;
+        }
+        .dropdown-item:active {
+          background-color: rgb(248, 249, 250);
+          color: black;
+        }
+        .dropdown-menu {
+          opacity: 0;
+          margin: 0 10px 0 10px;
+        }
+        .show {
+          opacity: 1;
+          transition: 0.3s;
+        }
+      }
+      .oval {
+        border: 1px solid #ffffff;
+        border-radius: 100%;
+        opacity: 0.4046688988095238;
+        width: 32px;
+        height: 32px;
+        .en {
+          color: #ffffff;
+          font-family: NunitoSans;
+          font-size: 18px;
+          line-height: 27px;
+          text-align: center;
+          margin: 0;
+        }
+      }
+    }
+    .container {
+      .title {
+        color: #faf8f2;
+        text-align: center;
+        margin: 0 auto 0 auto;
+        padding-top: 100px;
+        h1 {
+          color: #faf8f2;
+          font-family: PlayfairDisplay;
+          font-size: 79.73px;
+          font-weight: bold;
+        }
+      }
+      .sub-text {
+        color: #faf8f2;
+        padding: 40px 0 30px 0;
+        opacity: 0;
+        animation: slideInFromBottom 1s ease-out 0.5s 1 forwards;
+        p {
+          font-size: 18.94px;
+          font-weight: 300;
+          line-height: 23px;
+          font-family: NunitoSans;
+        }
+        width: 625px;
+        text-align: center;
+        margin: 0 auto 0 auto;
+      }
+      .eat-stay-amusement {
+        .rectangle {
+          animation: slideInFromBottom 1s ease-out 0.6s 1 forwards;
+          opacity: 0;
+          div {
+            text-align: center;
+            color: #ffffff;
+            padding-top: 10px;
+            font-family: PlayfairDisplay;
+            h5 {
+              font-size: 25.25px;
+              line-height: 30px;
+              font-weight: bold;
+            }
+          }
+          .rectangle-image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 252.5px;
+          }
+        }
+      }
+    }
+  }
+
+  .bg-lines {
+    background-image: url(../assets/bg_lines.png);
+    background-size: 1900px;
+    width: 100%;
+    opacity: 0.1;
+    position: absolute;
+    top: 400px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1828px;
+  }
+  .wrapper {
+    width: 100%;
+    height: 1362px;
+    box-shadow: 0px -40px 15px 8px rgb(31, 88, 147);
+    background: linear-gradient(
+      180deg,
+      rgba(31, 88, 147, 1) 0%,
+      rgba(20, 73, 109, 1) 100%
+    );
+    padding-top: 100px;
+
+    .container {
+      @keyframes createBox {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+    }
+    .one {
+      .background {
+        background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/11/eaedc6cfdf7c4c37836cedc5db77a85b?quality=95&fake=.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 2px;
+      }
+      .info {
+        background-color: #faf8f2;
+        border-radius: 2px;
+        height: 400px;
+      }
+    }
+    .two-left {
+      padding-top: 15px;
+      .lijeva {
+        padding-right: 7.5px;
+      }
+      .background {
+        background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/11/de8ce8b5b186458ea57b22c72d94969e?quality=95&fake=.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 2px;
+      }
+      .info {
+        background-color: #faf8f2;
+        border-radius: 2px;
+        height: 240px;
+      }
+    }
+    .two-right {
+      padding-top: 15px;
+      .desna {
+        padding-left: 7.5px;
+      }
+      .background {
+        background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/11/089874df6f7c411d9462f9d29dc7050d?quality=95&fake=.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 2px;
+      }
+      .info {
+        background-color: #faf8f2;
+        border-radius: 2px;
+        height: 240px;
+      }
+    }
+    .last {
+      padding-top: 15px;
+      .left {
+        height: 492px;
+        padding-left: 0;
+        padding-right: 7.5px;
+        .background {
+          background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/11/fa69b68cf5b7493ebef0d20169d25618?quality=95&fake=.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 2px;
+          height: 288px;
+        }
+        .info {
+          background-color: #faf8f2;
+          border-radius: 2px;
+          height: 204px;
+        }
+      }
+      .mid {
+        height: 492px;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+        .background {
+          background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/11/a7edc51acffb4e40b7e31117946270c0?quality=95&fake=.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 2px;
+          height: 288px;
+        }
+        .info {
+          background-color: #faf8f2;
+          border-radius: 2px;
+          height: 204px;
+        }
+      }
+      .right {
+        height: 492px;
+        padding-right: 0;
+        padding-left: 7.5px;
+        .background {
+          background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/11/8a74db2d635e44ffb7f1de2b9dee76bb?quality=95&fake=.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 2px;
+          height: 288px;
+        }
+        .info {
+          background-color: #faf8f2;
+          border-radius: 2px;
+          height: 204px;
+        }
+      }
+    }
+  }
+  .fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+  }
+
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .about {
+    height: 2130px;
+    position: relative;
+    .w-70 {
+      position: absolute;
+      width: 70%;
+      height: 1350px;
+      top: 0;
+      left: 0;
+      background-color: #f9f4e9;
+      z-index: -1;
+    }
+    .video-position {
+      position: relative;
+      .video-graphic {
+        background-image: url(../assets/Background_graphic.png);
+        background-repeat: no-repeat;
+        background-size: 3000px 400px;
+        opacity: 0.1;
+        width: 2000px;
+        height: 400px;
+        position: absolute;
+        left: -150px;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+      .video {
+        margin: 0 8% 0 8%;
+        padding: 50px 0 0 0;
+      }
+    }
+
+    .container {
+      .about-h2 {
+        padding: 50px 0 0 0;
+        p {
+          padding: 50px 0 0 100px;
+          margin: 0;
+        }
+      }
+      .beautis-of-mljet {
+        padding: 50px 0 0 0;
+        p {
+          padding: 50px 0 0 100px;
+          margin: 0;
+        }
+      }
+      .slider {
+        width: 100%;
+        height: 224.35px;
+        padding: 50px 0 0 0;
+        .slick-track {
+          height: 300px;
+        }
+        .slick-active {
+          margin: 0 10px 0 10px;
+        }
+        img {
+          width: 370px;
+          margin: 0;
+        }
+        .slick-slide .slick-track,
+        .slick-slider,
+        .slick-list {
+          height: 224.35px;
+        }
+      }
+      .quote {
+        width: 100%;
+        height: 216px;
+        margin: 200px 0 0 0;
+        color: #363434;
+        font-family: PlayfairDisplay;
+        font-size: 59.81px;
+        line-height: 72px;
+        opacity: 0.25;
+        text-align: center;
+        p {
+          margin: 0;
+        }
+      }
+      .banner {
+        width: 100%;
+        height: 250px;
+        background-image: url(../assets/1-Banner_1200x300.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 150px 0 0 0;
+      }
+    }
+    z-index: 2;
+  }
+  .info-last {
+    z-index: 1;
+    width: 100%;
+    height: 900px;
+    background-image: url(../assets/Bg_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    .bitmap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 565px;
+      opacity: 0.15;
+      background-image: url(../assets/Bitmap.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .compass {
+      position: absolute;
+      top: 150px;
+      right: 15%;
+      background-image: url(../assets/compass.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      z-index: 100;
+      opacity: 10%;
+      animation: spin 2s linear infinite;
+      animation-direction: alternate;
+      @keyframes spin {
+        from {
+          transform: rotate(-20deg);
+        }
+        to {
+          transform: rotate(20deg);
+        }
+      }
+    }
+    .container {
+      padding: 200px 0 0 0;
+      .title-mljet {
+        h1 {
+          color: #363434;
+          font-family: PlayfairDisplay;
+          font-size: 44.87px;
+          line-height: 54px;
+          opacity: 0.75;
+        }
+      }
+      .text-mljet {
+        padding: 50px 0 0 0;
+        button {
+          margin: 50px 0 0 0;
+          border: 1px solid #373434;
+          border-radius: 2px;
+          opacity: 0.5;
+          width: 121.5px;
+          height: 34.5px;
+          background-color: Transparent;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 167px;
+    background-color: #eee5d6;
+    text-align: center;
+    position: relative;
+
+    .informations {
+      width: 780px;
+      margin: 0 auto 0 auto;
+      display: flex;
+      justify-content: space-between;
+      color: #363434;
+      font-family: NunitoSans;
+      font-size: 14.21px;
+      line-height: 17px;
+      text-align: center;
+      .adresa,
+      .boutige-resort,
+      .contact-info {
+        width: 257px;
+      }
+    }
+    .copy-right {
+      width: 100%;
+      height: 20px;
+      padding: 0 16px 0 16px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+      color: #717171;
+      font-family: NunitoSans;
+      font-size: 14.21px;
+      line-height: 17px;
+      text-align: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.29);
+      div {
+        width: 345px;
+      }
+      .crafted {
+        text-align: right;
+      }
+    }
+  }
+  .social-media-icons {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+    .instagram,
+    .facebook,
+    .tripadvisor {
+      background-color: #373434;
+      border-radius: 100%;
+      opacity: 0.25;
+      width: 42px;
+      height: 42px;
+    }
+  }
+}
