@@ -28,7 +28,7 @@ function Footer() {
       <div className="copy-right">
         <div>Copyright © 2019, BOUTIQUE PINE TREE RESORT****</div>
         <div>Cookie law | Privacy policy</div>
-        <div className="crafted">crafted by ICONIS</div>
+        <div style={{ textAlign: "right" }}>crafted by ICONIS</div>
       </div>
     </div>
   );

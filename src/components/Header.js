@@ -84,7 +84,7 @@ function Header() {
         <div className="bg-lines"></div>
         <div className="container">
           <div className="row">
-            <div className="one col-md-12">
+            <div className="col-md-12">
               <div
                 className="row"
                 data-aos="zoom-in"
@@ -93,8 +93,14 @@ function Header() {
                 data-aos-once="true"
                 data-aos-anchor-placement="top-bottom"
               >
-                <div className="background col-md-8"></div>
-                <div className="info col-md-4">
+                <div
+                  className="background col-md-8"
+                  style={{
+                    backgroundImage:
+                      "url(https://marvel-live.freetls.fastly.net/canvas/2019/11/eaedc6cfdf7c4c37836cedc5db77a85b?quality=95&fake=.png)",
+                  }}
+                ></div>
+                <div className="info col-md-4" style={{ height: "400px" }}>
                   <p>18. 03. 2019 | WHERE TO EAT</p>
                   <h3>
                     Get Ready Fast For <br />
@@ -110,17 +116,24 @@ function Header() {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="two-left col-md-6">
+          <div className="row" style={{ paddingTop: "15px" }}>
+            <div className="col-md-6">
               <div
-                className="row lijeva"
+                className="row"
+                style={{ paddingRight: "7.5px", height: "240px" }}
                 data-aos="zoom-in-right"
                 data-aos-duration="1000"
                 data-aos-mirror="true"
                 data-aos-once="true"
                 data-aos-anchor-placement="top-bottom"
               >
-                <div className="background col-md-6"></div>
+                <div
+                  className="background col-md-6"
+                  style={{
+                    backgroundImage:
+                      "url(https://marvel-live.freetls.fastly.net/canvas/2019/11/de8ce8b5b186458ea57b22c72d94969e?quality=95&fake=.png)",
+                  }}
+                ></div>
                 <div className="info col-md-6">
                   <p>18. 03. 2019 | WHERE TO EAT</p>
                   <h5>
@@ -130,16 +143,23 @@ function Header() {
                 </div>
               </div>
             </div>
-            <div className="two-right col-md-6">
+            <div className="col-md-6">
               <div
-                className="row desna"
+                className="row"
+                style={{ paddingLeft: "7.5px", height: "240px" }}
                 data-aos="zoom-in-left"
                 data-aos-duration="1000"
                 data-aos-mirror="true"
                 data-aos-once="true"
                 data-aos-anchor-placement="top-bottom"
               >
-                <div className="background col-md-6"></div>
+                <div
+                  className="background col-md-6"
+                  style={{
+                    backgroundImage:
+                      "url(https://marvel-live.freetls.fastly.net/canvas/2019/11/089874df6f7c411d9462f9d29dc7050d?quality=95&fake=.png)",
+                  }}
+                ></div>
                 <div className="info col-md-6">
                   <p>18. 03. 2019 | WHERE TO EAT</p>
                   <h5>
@@ -150,16 +170,26 @@ function Header() {
               </div>
             </div>
           </div>
-          <div className="row last">
+
+          <div className="row" style={{ paddingTop: "15px", height: "492px" }}>
+            {" "}
             <div
-              className="left col-md-4"
+              className="col-md-4"
+              style={{ padding: "0 7.5px 0 0" }}
               data-aos="zoom-in-up"
               data-aos-duration="1000"
               data-aos-once="true"
               data-aos-anchor-placement="top-bottom"
             >
-              <div className="background col-md-12"></div>
-              <div className="info col-md-12">
+              <div
+                className="background col-md-12"
+                style={{
+                  backgroundImage:
+                    "url(https://marvel-live.freetls.fastly.net/canvas/2019/11/fa69b68cf5b7493ebef0d20169d25618?quality=95&fake=.png)",
+                  height: "288px",
+                }}
+              ></div>
+              <div className="info col-md-12" style={{ height: "204px" }}>
                 <p>18. 03. 2019 | WHERE TO EAT</p>
                 <h5>
                   Turkey Gravy Secrets
@@ -168,14 +198,22 @@ function Header() {
               </div>
             </div>
             <div
-              className="mid col-md-4"
+              className="col-md-4"
+              style={{ padding: "0 7.5px 0 7.5px" }}
               data-aos="zoom-in-up"
               data-aos-duration="1000"
               data-aos-once="true"
               data-aos-anchor-placement="top-bottom"
             >
-              <div className="background col-md-12"></div>
-              <div className="info col-md-12">
+              <div
+                className="background col-md-12"
+                style={{
+                  backgroundImage:
+                    "url(https://marvel-live.freetls.fastly.net/canvas/2019/11/a7edc51acffb4e40b7e31117946270c0?quality=95&fake=.png)",
+                  height: "288px",
+                }}
+              ></div>
+              <div className="info col-md-12" style={{ height: "204px" }}>
                 <p>18. 03. 2019 | WHERE TO EAT</p>
                 <h5>
                   Barbecue Party Tips For A <br />
@@ -184,14 +222,22 @@ function Header() {
               </div>
             </div>
             <div
-              className="right col-md-4"
+              className="col-md-4"
+              style={{ padding: "0 0 0 7.5px" }}
               data-aos="zoom-in-up"
               data-aos-duration="1000"
               data-aos-once="true"
               data-aos-anchor-placement="top-bottom"
             >
-              <div className="background col-md-12"></div>
-              <div className="info col-md-12">
+              <div
+                className="background col-md-12"
+                style={{
+                  backgroundImage:
+                    "url(https://marvel-live.freetls.fastly.net/canvas/2019/11/8a74db2d635e44ffb7f1de2b9dee76bb?quality=95&fake=.png)",
+                  height: "288px",
+                }}
+              ></div>
+              <div className="info col-md-12" style={{ height: "204px" }}>
                 <p>18. 03. 2019 | WHERE TO EAT</p>
                 <h5>
                   The Luxury Of Traveling

@@ -34,6 +34,22 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
   }
 }
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
 
 .App {
   .header {
@@ -155,7 +171,6 @@ body::-webkit-scrollbar-thumb {
       }
     }
   }
-
   .bg-lines {
     background-image: url(../assets/bg_lines.png);
     background-size: 1900px;
@@ -179,144 +194,23 @@ body::-webkit-scrollbar-thumb {
     );
     padding-top: 100px;
 
-    .container {
-      @keyframes createBox {
-        from {
-          transform: scale(0);
-        }
-        to {
-          transform: scale(1);
-        }
-      }
+    .background {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 2px;
     }
-    .one {
-      .background {
-        background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/11/eaedc6cfdf7c4c37836cedc5db77a85b?quality=95&fake=.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 2px;
-      }
-      .info {
-        background-color: #faf8f2;
-        border-radius: 2px;
-        height: 400px;
-      }
-    }
-    .two-left {
-      padding-top: 15px;
-      .lijeva {
-        padding-right: 7.5px;
-      }
-      .background {
-        background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/11/de8ce8b5b186458ea57b22c72d94969e?quality=95&fake=.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 2px;
-      }
-      .info {
-        background-color: #faf8f2;
-        border-radius: 2px;
-        height: 240px;
-      }
-    }
-    .two-right {
-      padding-top: 15px;
-      .desna {
-        padding-left: 7.5px;
-      }
-      .background {
-        background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/11/089874df6f7c411d9462f9d29dc7050d?quality=95&fake=.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 2px;
-      }
-      .info {
-        background-color: #faf8f2;
-        border-radius: 2px;
-        height: 240px;
-      }
-    }
-    .last {
-      padding-top: 15px;
-      .left {
-        height: 492px;
-        padding-left: 0;
-        padding-right: 7.5px;
-        .background {
-          background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/11/fa69b68cf5b7493ebef0d20169d25618?quality=95&fake=.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          border-radius: 2px;
-          height: 288px;
-        }
-        .info {
-          background-color: #faf8f2;
-          border-radius: 2px;
-          height: 204px;
-        }
-      }
-      .mid {
-        height: 492px;
-        padding-left: 7.5px;
-        padding-right: 7.5px;
-        .background {
-          background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/11/a7edc51acffb4e40b7e31117946270c0?quality=95&fake=.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          border-radius: 2px;
-          height: 288px;
-        }
-        .info {
-          background-color: #faf8f2;
-          border-radius: 2px;
-          height: 204px;
-        }
-      }
-      .right {
-        height: 492px;
-        padding-right: 0;
-        padding-left: 7.5px;
-        .background {
-          background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/11/8a74db2d635e44ffb7f1de2b9dee76bb?quality=95&fake=.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          border-radius: 2px;
-          height: 288px;
-        }
-        .info {
-          background-color: #faf8f2;
-          border-radius: 2px;
-          height: 204px;
-        }
-      }
+    .info {
+      background-color: #faf8f2;
+      border-radius: 2px;
     }
   }
   .fade-in {
     opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-  }
-
-  @keyframes fadeInOpacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: fadeInOpacity 2s ease-in 1;
   }
 
   .about {
-    height: 2130px;
-    position: relative;
     .w-70 {
       position: absolute;
       width: 70%;
@@ -326,42 +220,7 @@ body::-webkit-scrollbar-thumb {
       background-color: #f9f4e9;
       z-index: -1;
     }
-    .video-position {
-      position: relative;
-      .video-graphic {
-        background-image: url(../assets/Background_graphic.png);
-        background-repeat: no-repeat;
-        background-size: 3000px 400px;
-        opacity: 0.1;
-        width: 2000px;
-        height: 400px;
-        position: absolute;
-        left: -150px;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-      }
-      .video {
-        margin: 0 8% 0 8%;
-        padding: 50px 0 0 0;
-      }
-    }
-
     .container {
-      .about-h2 {
-        padding: 50px 0 0 0;
-        p {
-          padding: 50px 0 0 100px;
-          margin: 0;
-        }
-      }
-      .beautis-of-mljet {
-        padding: 50px 0 0 0;
-        p {
-          padding: 50px 0 0 100px;
-          margin: 0;
-        }
-      }
       .slider {
         width: 100%;
         height: 224.35px;
@@ -385,7 +244,7 @@ body::-webkit-scrollbar-thumb {
       .quote {
         width: 100%;
         height: 216px;
-        margin: 200px 0 0 0;
+        margin: 150px 0 0 0;
         color: #363434;
         font-family: PlayfairDisplay;
         font-size: 59.81px;
@@ -403,15 +262,27 @@ body::-webkit-scrollbar-thumb {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        margin: 150px 0 0 0;
+        margin: 100px 0 0 0;
       }
     }
-    z-index: 2;
+    .video-graphic {
+      background-image: url(../assets/Background_graphic.png);
+      background-repeat: no-repeat;
+      background-size: 3000px 400px;
+      opacity: 0.1;
+      width: 2000px;
+      height: 400px;
+      position: absolute;
+      left: -150px;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
   }
   .info-last {
     z-index: 1;
     width: 100%;
-    height: 900px;
+    height: 800px;
     background-image: url(../assets/Bg_img.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -430,7 +301,7 @@ body::-webkit-scrollbar-thumb {
     }
     .compass {
       position: absolute;
-      top: 150px;
+      top: 200px;
       right: 15%;
       background-image: url(../assets/compass.png);
       background-repeat: no-repeat;
@@ -440,41 +311,28 @@ body::-webkit-scrollbar-thumb {
       height: 200px;
       z-index: 100;
       opacity: 10%;
-      animation: spin 2s linear infinite;
-      animation-direction: alternate;
-      @keyframes spin {
-        from {
-          transform: rotate(-20deg);
-        }
-        to {
-          transform: rotate(20deg);
-        }
+      animation: spin 2s linear infinite alternate;
+    }
+
+    .title-mljet {
+      h1 {
+        color: #363434;
+        font-family: PlayfairDisplay;
+        font-size: 44.87px;
+        line-height: 54px;
+        opacity: 0.75;
       }
     }
-    .container {
-      padding: 200px 0 0 0;
-      .title-mljet {
-        h1 {
-          color: #363434;
-          font-family: PlayfairDisplay;
-          font-size: 44.87px;
-          line-height: 54px;
-          opacity: 0.75;
-        }
-      }
-      .text-mljet {
-        padding: 50px 0 0 0;
-        button {
-          margin: 50px 0 0 0;
-          border: 1px solid #373434;
-          border-radius: 2px;
-          opacity: 0.5;
-          width: 121.5px;
-          height: 34.5px;
-          background-color: Transparent;
-          background-repeat: no-repeat;
-        }
-      }
+
+    button {
+      margin: 50px 0 0 0;
+      border: 1px solid #373434;
+      border-radius: 2px;
+      opacity: 0.5;
+      width: 121.5px;
+      height: 34.5px;
+      background-color: Transparent;
+      background-repeat: no-repeat;
     }
   }
   .footer {
@@ -516,9 +374,6 @@ body::-webkit-scrollbar-thumb {
       border-top: 1px solid rgba(0, 0, 0, 0.29);
       div {
         width: 345px;
-      }
-      .crafted {
-        text-align: right;
       }
     }
   }

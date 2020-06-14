@@ -5,8 +5,8 @@ function Info() {
     <div className="info-last">
       <div className="bitmap"></div>
       <div className="compass"></div>
-      <div className="container">
-        <div className="title-mljet">
+      <div className="container" style={{ padding: "250px 0 0 0" }}>
+        <div className="title-mljet" style={{ padding: "50px 0 0 0" }}>
           <h1>How to reach Mljet</h1>
         </div>
         <div className="text-mljet">

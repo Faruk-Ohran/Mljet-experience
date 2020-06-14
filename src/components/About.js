@@ -7,7 +7,10 @@ function About() {
     Aos.init({ duration: 20000, easing: "ease-in-sine" });
   }, []);
   return (
-    <div className="about">
+    <div
+      className="about"
+      style={{ height: "2000px", position: "relative", zIndex: "2" }}
+    >
       <div
         className="w-70"
         data-aos="slide-right"
@@ -17,7 +20,7 @@ function About() {
         data-aos-anchor-placement="top-bottom"
       ></div>
       <div className="container">
-        <div className="about-h2">
+        <div className="about-h2" style={{ padding: "50px 0 0 0" }}>
           <h2
             data-aos="fade-right"
             data-aos-duration="1000"
@@ -29,6 +32,7 @@ function About() {
             About Mljet
           </h2>
           <p
+            style={{ padding: "50px 0 0 100px", margin: "0" }}
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="900"
@@ -52,6 +56,7 @@ function About() {
       </div>
       <div
         className="video-position"
+        style={{ position: "relative" }}
         data-aos="fade-in"
         data-aos-easing="ease-in-quad"
         data-aos-duration="1000"
@@ -63,6 +68,7 @@ function About() {
         <div className="video-graphic"></div>
         <div
           className="video"
+          style={{ margin: "0 8% 0 8%", padding: "50px 0 0 0" }}
           data-aos="fade-in"
           data-aos-easing="ease-in-quad"
           data-aos-duration="1000"
@@ -82,7 +88,7 @@ function About() {
         </div>
       </div>
       <div className="container">
-        <div className="beautis-of-mljet">
+        <div className="beautis-of-mljet" style={{ padding: "50px 0 0 0" }}>
           <h1
             data-aos="fade-right"
             data-aos-duration="1000"
@@ -94,6 +100,7 @@ function About() {
             Beauties of Mljet
           </h1>
           <p
+            style={{ padding: "50px 0 0 100px", margin: "0" }}
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="900"
