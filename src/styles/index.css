@@ -29,50 +29,6 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--scrollbarBG);
 }
 
-@-webkit-keyframes slideInFromBottom {
-  from {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromBottom {
-  from {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(-20deg);
@@ -195,9 +151,6 @@ body::-webkit-scrollbar-thumb {
 .App .header .container .sub-text {
   color: #faf8f2;
   padding: 40px 0 30px 0;
-  opacity: 0;
-  -webkit-animation: slideInFromBottom 1s ease-out 0.5s 1 forwards;
-          animation: slideInFromBottom 1s ease-out 0.5s 1 forwards;
   width: 625px;
   text-align: center;
   margin: 0 auto 0 auto;
@@ -208,12 +161,6 @@ body::-webkit-scrollbar-thumb {
   font-weight: 300;
   line-height: 23px;
   font-family: NunitoSans;
-}
-
-.App .header .container .eat-stay-amusement .rectangle {
-  -webkit-animation: slideInFromBottom 1s ease-out 0.6s 1 forwards;
-          animation: slideInFromBottom 1s ease-out 0.6s 1 forwards;
-  opacity: 0;
 }
 
 .App .header .container .eat-stay-amusement .rectangle div {
@@ -288,12 +235,6 @@ body::-webkit-scrollbar-thumb {
           box-shadow: inset 0px -15px 15px 0px rgba(31, 87, 147, 0.5);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.App .fade-in {
-  opacity: 1;
-  -webkit-animation: fadeInOpacity 2s ease-in 1;
-          animation: fadeInOpacity 2s ease-in 1;
 }
 
 .App .about .w-70 {

@@ -12,13 +12,29 @@ function Header() {
       <Navbar />
       <div className="container">
         <div className="row">
-          <div className="title col-md-12 fade-in">
+          <div
+            className="title col-md-12"
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-bottom"
+          >
             <h1>
               Get Ready Fast For Fall
               <br /> Leaf Viewing Trips
             </h1>
           </div>
-          <div className="sub-text col-md-12">
+          <div
+            className="sub-text col-md-12"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-bottom"
+          >
             <p>
               Buying the right telescope to take your love of astronomy to the
               next level <br />
@@ -36,6 +52,11 @@ function Header() {
           <div
             className="rectangle col-md-4"
             style={{ padding: "0 7.5px 0 0" }}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1200"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-bottom"
           >
             <div
               className="rectangle-image"
@@ -50,7 +71,12 @@ function Header() {
           </div>
           <div
             className="rectangle col-md-4"
-            style={{ animationDelay: "0.7s", padding: "0 7.5px 0 7.5px" }}
+            style={{ padding: "0 7.5px 0 7.5px" }}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1500"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-bottom"
           >
             <div
               className="rectangle-image"
@@ -65,7 +91,12 @@ function Header() {
           </div>
           <div
             className="rectangle col-md-4"
-            style={{ animationDelay: "0.8s", padding: "0 0 0 7.5px" }}
+            style={{ padding: "0 0 0 7.5px" }}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1800"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-bottom"
           >
             <div
               className="rectangle-image"
