@@ -3,18 +3,28 @@ import React from "react";
 function Footer() {
   return (
     <div className="footer">
-      <h3 style={{ textDecoration: "underline" }}>MLJET</h3>
+      <h3
+        style={{ textDecoration: "underline", paddingTop: "10px", margin: "0" }}
+      >
+        MLJET
+      </h3>
       <h6>EXPERIENCE</h6>
       <div className="informations">
-        <div className="adresa">
+        <div
+          className="adresa"
+          style={{ textAlign: "right", paddingRight: "20px" }}
+        >
           Saplunara 17,
           <br /> Island Mljet, Croatia
         </div>
-        <div className="boutige-resort">
+        <div className="boutige-resort" style={{ padding: "0 20px 0 20px" }}>
           BOUTIQUE PINE TREE RESORT****
           <br /> LUXURY APARMENTS & RESTAURANT
         </div>
-        <div className="contact-info">
+        <div
+          className="contact-info"
+          style={{ textAlign: "left", paddingLeft: "20px" }}
+        >
           +385 99 591 00 24
           <br />
           boutiquepinetree@gmail.com

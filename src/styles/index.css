@@ -367,12 +367,14 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
   width: 100%;
   height: 565px;
   opacity: 0.15;
   background-image: url(../assets/Bitmap.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .App .info-last .compass {
@@ -412,15 +414,15 @@ body::-webkit-scrollbar-thumb {
 
 .App .footer {
   width: 100%;
-  height: 167px;
+  height: 207px;
   background-color: #eee5d6;
   text-align: center;
   position: relative;
 }
 
 .App .footer .informations {
-  width: 780px;
-  margin: 0 auto 0 auto;
+  width: 900px;
+  margin: 15px auto 15px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,10 +436,15 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
+.App .footer .informations .boutige-resort {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
 .App .footer .informations .adresa,
 .App .footer .informations .boutige-resort,
 .App .footer .informations .contact-info {
-  width: 257px;
+  width: 300px;
 }
 
 .App .footer .copy-right {
