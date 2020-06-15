@@ -4,8 +4,8 @@ import { NavDropdown, Nav } from "react-bootstrap";
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="brand col-md-6" style={{ height: "64px", padding: "0" }}>
-        <h3 style={{ textDecoration: "underline", margin: "0" }}>MLJET</h3>
+      <div className="col-md-6" style={{ height: "64px", padding: "0" }}>
+        <h3 style={{ textDecoration: "underline", margin: "0" }}>MLjET</h3>
         <h6>EXPERIENCE</h6>
       </div>
       <div className="buttons col-md-5">

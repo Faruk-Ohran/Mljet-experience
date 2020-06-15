@@ -34,6 +34,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 .App {
+  .underline {
+    text-decoration: none;
+    position: relative;
+  }
+
+  .underline:after {
+    position: absolute;
+    height: 1px;
+    content: "";
+    top: 73px;
+    left: 0;
+    width: 100%;
+    color: #000;
+    background-color: black;
+  }
   .header {
     background-image: url("https://www.arcgis.com/sharing/rest/content/items/779d8664f209431ca81dfd1e3d9d4c1e/resources/1567527975387.jpeg?w=3492");
     background-repeat: no-repeat;
@@ -137,9 +152,6 @@ body::-webkit-scrollbar-thumb {
               font-size: 25.25px;
               line-height: 30px;
               font-weight: bold;
-            }
-            h5:hover {
-              cursor: pointer;
             }
           }
           .rectangle-image {

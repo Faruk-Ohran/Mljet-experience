@@ -19,6 +19,16 @@ function About() {
         data-aos-once="true"
         data-aos-anchor-placement="top-bottom"
       ></div>
+      <div
+        className="underline"
+        style={{ width: "10%" }}
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+        data-aos-mirror="false"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-bottom"
+      ></div>
       <div className="container">
         <div className="about-h2" style={{ padding: "50px 0 0 0" }}>
           <h2
@@ -87,9 +97,19 @@ function About() {
           ></iframe>
         </div>
       </div>
+      <div
+        className="underline"
+        style={{ width: "10%" }}
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+        data-aos-mirror="false"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-bottom"
+      ></div>
       <div className="container">
         <div className="beautis-of-mljet" style={{ padding: "50px 0 0 0" }}>
-          <h1
+          <h2
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="500"
@@ -98,12 +118,12 @@ function About() {
             data-aos-anchor-placement="top-bottom"
           >
             Beauties of Mljet
-          </h1>
+          </h2>
           <p
             style={{ padding: "50px 0 0 100px", margin: "0" }}
             data-aos="fade-right"
             data-aos-duration="1000"
-            data-aos-delay="900"
+            data-aos-delay="1000"
             data-aos-mirror="false"
             data-aos-once="true"
             data-aos-anchor-placement="top-bottom"
@@ -129,7 +149,6 @@ function About() {
         <div className="quote container">
           <p
             data-aos="fade-in"
-            data-aos-easing="ease-in-quad"
             data-aos-duration="1000"
             data-aos-delay="500"
             data-aos-mirror="false"
