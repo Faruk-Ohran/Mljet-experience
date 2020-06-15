@@ -21,10 +21,10 @@ function About() {
       ></div>
       <div
         className="underline"
-        style={{ width: "10%" }}
+        style={{ width: "8%" }}
         data-aos="fade-right"
         data-aos-duration="1000"
-        data-aos-delay="500"
+        data-aos-delay="1200"
         data-aos-mirror="false"
         data-aos-once="true"
         data-aos-anchor-placement="top-bottom"
@@ -34,7 +34,7 @@ function About() {
           <h2
             data-aos="fade-right"
             data-aos-duration="1000"
-            data-aos-delay="500"
+            data-aos-delay="600"
             data-aos-mirror="false"
             data-aos-once="true"
             data-aos-anchor-placement="top-bottom"
@@ -99,10 +99,10 @@ function About() {
       </div>
       <div
         className="underline"
-        style={{ width: "10%" }}
+        style={{ width: "8%" }}
         data-aos="fade-right"
         data-aos-duration="1000"
-        data-aos-delay="500"
+        data-aos-delay="1300"
         data-aos-mirror="false"
         data-aos-once="true"
         data-aos-anchor-placement="top-bottom"
@@ -112,7 +112,7 @@ function About() {
           <h2
             data-aos="fade-right"
             data-aos-duration="1000"
-            data-aos-delay="500"
+            data-aos-delay="900"
             data-aos-mirror="false"
             data-aos-once="true"
             data-aos-anchor-placement="top-bottom"
