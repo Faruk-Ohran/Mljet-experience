@@ -100,10 +100,12 @@ body::-webkit-scrollbar-thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
   padding: 0;
+  height: 32px;
 }
 
 .App .header .navbar .buttons .nav-item,
@@ -112,9 +114,9 @@ body::-webkit-scrollbar-thumb {
   color: #ffffff;
   font-family: NunitoSans;
   font-size: 18px;
-  line-height: 22px;
   text-align: center;
   padding: 0 10px 0 10px;
+  line-height: 32px;
 }
 
 .App .header .navbar .buttons .dropdown-item:active {
@@ -139,13 +141,15 @@ body::-webkit-scrollbar-thumb {
   opacity: 0.4046688988095238;
   width: 32px;
   height: 32px;
+  position: absolute;
+  right: 0;
 }
 
 .App .header .navbar .oval .en {
   color: #ffffff;
   font-family: NunitoSans;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 30px;
   text-align: center;
   margin: 0;
 }

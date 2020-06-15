@@ -15,11 +15,10 @@ function Navbar() {
           <NavDropdown.Item href="#action/3.2">Zabava</NavDropdown.Item>
         </NavDropdown>
         <Nav.Link href="#">KAKO DO MLJETA</Nav.Link>
-        <Nav.Link href="#">
-          <div className="oval">
-            <p className="en">EN</p>
-          </div>
-        </Nav.Link>
+
+        <div className="oval">
+          <p className="en">EN</p>
+        </div>
       </div>
     </div>
   );
