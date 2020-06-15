@@ -229,6 +229,10 @@ body::-webkit-scrollbar-thumb {
   font-weight: bold;
 }
 
+.App .header .container .eat-stay-amusement .rectangle div h5:hover {
+  cursor: pointer;
+}
+
 .App .header .container .eat-stay-amusement .rectangle .rectangle-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -266,9 +270,24 @@ body::-webkit-scrollbar-thumb {
   border-radius: 2px;
 }
 
+.App .wrapper .background:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .App .wrapper .info {
   background-color: #faf8f2;
   border-radius: 2px;
+}
+
+.App .wrapper .info:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px -15px 15px 0px rgba(31, 87, 147, 0.5);
+          box-shadow: inset 0px -15px 15px 0px rgba(31, 87, 147, 0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .App .fade-in {
