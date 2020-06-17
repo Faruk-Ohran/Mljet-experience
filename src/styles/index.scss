@@ -354,17 +354,28 @@ body::-webkit-scrollbar-thumb {
       padding: 0 8.25vw 0 8.25vw;
     }
     .slider {
-      width: 100%;
-      height: 70vh;
-      background-color: black;
+      .slick-slide {
+        width: 52vw !important;
+        height: 58.6vh !important;
+        div {
+          div {
+            outline: none !important;
+          }
+        }
+      }
+      img {
+        width: 47.3vw;
+        height: 58.6vh;
+      }
     }
+
     .quote {
       width: 63.15vw;
       height: 21.2vh;
       color: #363434;
       opacity: 0.25;
       text-align: center;
-      margin: 9.3vh 19vw 0 19vw;
+      margin: 9.3vh 19vw 27vh 19vw;
       line-height: 6.7vh;
       h1 {
         font-family: "Playfair Display", serif;
@@ -383,7 +394,9 @@ body::-webkit-scrollbar-thumb {
       background-position: center;
       background-size: 100% 100%;
       background-repeat: no-repeat;
-      margin: 9.3vh 18.8vw 0 18.8vw;
+      margin: 0 18.8vw 0 18.8vw;
+      position: absolute;
+      bottom: -35vh;
     }
 
     .video-graphic {
@@ -414,7 +427,7 @@ body::-webkit-scrollbar-thumb {
       top: 0;
       left: -11.55vw;
       right: 11.55vw;
-      bottom: 40vh;
+      bottom: 44.5vh;
       opacity: 0.15;
       background-image: url(../assets/Bitmap.png);
       background-size: 100vw;
@@ -490,17 +503,24 @@ body::-webkit-scrollbar-thumb {
     background-color: #eee5d6;
     text-align: center;
     position: relative;
-    h3 {
-      padding: 3.5vh 0 0 0;
-      margin: 0;
-      text-decoration: underline;
-      font-family: "Playfair Display", serif;
-      font-weight: 700;
+    .brand {
+      width: 5vw;
+      margin: 0 auto 0 auto;
+      h3 {
+        width: 100%;
+        padding: 3.5vh 0 0 0;
+        margin: 0;
+        text-decoration: underline;
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        letter-spacing: 0.15vw;
+      }
+      h6 {
+        width: 100%;
+        letter-spacing: 0.06vw;
+      }
     }
-    p {
-      margin: 0;
-      font-size: 3.2vh;
-    }
+
     .informations {
       width: 50vw;
       margin: 3.5vh auto 0 auto;

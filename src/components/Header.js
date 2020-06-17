@@ -110,10 +110,10 @@ function Header() {
           <div
             className="row"
             data-aos="zoom-in"
-            data-aos-duration="1000"
+            data-aos-duration="700"
             data-aos-mirror="true"
             data-aos-once="true"
-            data-aos-anchor-placement="top-bottom"
+            data-aos-anchor-placement="bottom-bottom"
           >
             <div
               className="background"
@@ -143,10 +143,10 @@ function Header() {
             <div
               className="two-pictures"
               data-aos="zoom-in-right"
-              data-aos-duration="1000"
+              data-aos-duration="700"
               data-aos-mirror="true"
               data-aos-once="true"
-              data-aos-anchor-placement="top-bottom"
+              data-aos-anchor-placement="bottom-bottom"
               style={{ marginRight: "0.95vw" }}
             >
               <div
@@ -167,10 +167,10 @@ function Header() {
             <div
               className="two-pictures"
               data-aos="zoom-in-left"
-              data-aos-duration="1000"
+              data-aos-duration="700"
               data-aos-mirror="true"
               data-aos-once="true"
-              data-aos-anchor-placement="top-bottom"
+              data-aos-anchor-placement="bottom-bottom"
               style={{ marginLeft: "0.95vw" }}
             >
               <div
@@ -193,9 +193,9 @@ function Header() {
             <div
               className="three-pictures"
               data-aos="zoom-in-up"
-              data-aos-duration="1000"
+              data-aos-duration="700"
               data-aos-once="true"
-              data-aos-anchor-placement="top-bottom"
+              data-aos-anchor-placement="bottom-bottom"
               style={{ marginRight: "0.835vw" }}
             >
               <div
@@ -216,9 +216,9 @@ function Header() {
             <div
               className="three-pictures"
               data-aos="zoom-in-up"
-              data-aos-duration="1000"
+              data-aos-duration="700"
               data-aos-once="true"
-              data-aos-anchor-placement="top-bottom"
+              data-aos-anchor-placement="bottom-bottom"
               style={{ margin: "0 0.835vw 0 0.835vw" }}
             >
               <div
@@ -239,9 +239,9 @@ function Header() {
             <div
               className="three-pictures"
               data-aos="zoom-in-up"
-              data-aos-duration="1000"
+              data-aos-duration="700"
               data-aos-once="true"
-              data-aos-anchor-placement="top-bottom"
+              data-aos-anchor-placement="bottom-bottom"
               style={{ marginLeft: "0.835vw" }}
             >
               <div

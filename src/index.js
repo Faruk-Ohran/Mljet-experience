@@ -3,16 +3,13 @@ import ReactDOM from "react-dom";
 import "./styles/index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
-
-import "bootstrap";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.js";
-import $ from "jquery";
-import Popper from "popper.js";
 
 ReactDOM.render(
   <React.StrictMode>

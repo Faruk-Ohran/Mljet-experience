@@ -3,8 +3,10 @@ import React from "react";
 function Footer() {
   return (
     <div className="footer">
-      <h3>MLJET</h3>
-      <p>EXPERIENCE</p>
+      <div className="brand">
+        <h3>MLJET</h3>
+        <h6>EXPERIENCE</h6>
+      </div>
       <div className="informations">
         <div
           className="adresa"

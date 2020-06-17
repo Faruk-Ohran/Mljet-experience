@@ -17,25 +17,20 @@ const photos = [
     url:
       "https://marvel-live.freetls.fastly.net/canvas/2019/11/af4b1982d51644c79d4647a2ac01fe27?quality=95&fake=.png",
   },
-  {
-    id: 4,
-    url:
-      "https://marvel-live.freetls.fastly.net/canvas/2019/11/eaedc6cfdf7c4c37836cedc5db77a85b?quality=95&fake=.png",
-  },
 ];
 
 class SimpleSlider extends Component {
   render() {
     const settings = {
+      className: "slider variable-width",
       dots: true,
       infinite: true,
-      speed: 500,
-      slidesToShow: 3,
+      centerMode: true,
+      slidesToShow: 1,
       slidesToScroll: 1,
-      initialSlide: 3,
-      arrows: false,
+      variableWidth: true,
       autoplay: false,
-      focusOnSelect: false,
+      speed: 1000,
     };
     return (
       <div className="slider">

@@ -31,7 +31,7 @@ function About() {
         <p
           data-aos="fade-right"
           data-aos-duration="1000"
-          data-aos-delay="900"
+          data-aos-delay="700"
           data-aos-mirror="false"
           data-aos-once="true"
           data-aos-anchor-placement="top-bottom"
@@ -51,7 +51,7 @@ function About() {
         data-aos="fade-in"
         data-aos-easing="ease-in-quad"
         data-aos-duration="1000"
-        data-aos-delay="1000"
+        data-aos-delay="800"
         data-aos-mirror="false"
         data-aos-once="true"
         data-aos-anchor-placement="top-bottom"
@@ -77,12 +77,10 @@ function About() {
           ></iframe>
         </div>
       </div>
-
       <div className="about-h2">
         <h2
           data-aos="fade-right"
           data-aos-duration="1000"
-          data-aos-delay="900"
           data-aos-mirror="false"
           data-aos-once="true"
           data-aos-anchor-placement="top-bottom"
@@ -92,7 +90,6 @@ function About() {
         <p
           data-aos="fade-right"
           data-aos-duration="1000"
-          data-aos-delay="1000"
           data-aos-mirror="false"
           data-aos-once="true"
           data-aos-anchor-placement="top-bottom"
@@ -107,12 +104,11 @@ function About() {
           want to spend some time with you.
         </p>
       </div>
-      <div className="slider"></div>
+      <Slider />
       <div className="quote">
         <h1
           data-aos="fade-in"
           data-aos-duration="1000"
-          data-aos-delay="500"
           data-aos-mirror="false"
           data-aos-once="true"
           data-aos-anchor-placement="top-bottom"
@@ -124,7 +120,6 @@ function About() {
           data-aos="fade-in"
           data-aos-easing="ease-in-quad"
           data-aos-duration="1000"
-          data-aos-delay="500"
           data-aos-mirror="false"
           data-aos-once="true"
           data-aos-anchor-placement="top-bottom"
@@ -137,7 +132,6 @@ function About() {
         data-aos="zoom-in-down"
         data-aos-easing="ease-in-quad"
         data-aos-duration="1000"
-        data-aos-delay="1000"
         data-aos-mirror="false"
         data-aos-once="true"
         data-aos-anchor-placement="top-bottom"

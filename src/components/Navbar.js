@@ -11,7 +11,7 @@ class Navbar extends Component {
         <div className="buttons">
           <div className="dropdown">
             <a
-              class="btn btn-secondary dropdown-toggle zanimljivosti"
+              className="btn btn-secondary dropdown-toggle zanimljivosti"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -21,17 +21,17 @@ class Navbar extends Component {
               ZANIMLJIVOSTI
             </a>
             <div
-              class="dropdown-menu"
+              className="dropdown-menu"
               aria-labelledby="dropdownMenuButton"
               style={{ transform: "translate3d(10px, 27, 0) !important" }}
             >
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 Gdje jesti?
               </a>
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 Gdje odsjesti?
               </a>
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 Zabava
               </a>
             </div>
