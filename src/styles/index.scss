@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   --scrollbarBG: rgba(255, 255, 255, 0);
   --thumbBG: #90a4ae;
@@ -43,6 +42,7 @@ body::-webkit-scrollbar-thumb {
       background-size: 100vw 100vh;
       background-repeat: repeat;
       background-image: url(../assets/Header_overlay.png);
+      z-index: 2;
       .bg-lines {
         background-image: url(../assets/bg_lines.png);
         width: 100%;
@@ -87,6 +87,33 @@ body::-webkit-scrollbar-thumb {
           display: flex;
           justify-content: flex-end;
           width: 66.6vw;
+          .btn {
+            margin: 1vh 3vw 0 0;
+            padding: 0;
+            background: none;
+            border: none;
+          }
+          .dropdown-menu {
+            min-width: 7.3vw;
+          }
+
+          .dropdown-item {
+            height: 4.2vh;
+            text-align: left;
+            padding: 1.05vh 0 0 0.8vw;
+            margin: 0;
+            color: #363434;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 400;
+            font-size: 1.67vh;
+            line-height: 2.1vh;
+            border-top: 1px solid rgba(113, 113, 113, 0.12);
+            border-bottom: 1px solid rgba(113, 113, 113, 0.12);
+          }
+          .dropdown-item:active {
+            background-color: rgba(255, 255, 255, 0.527);
+          }
+
           a {
             height: 2.3vh;
             margin: 1vh 3vw 0 0;
@@ -103,28 +130,26 @@ body::-webkit-scrollbar-thumb {
           .oval {
             width: 2.188vw;
             height: 3.89vh;
-            border: 1px solid #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.404);
             border-radius: 100%;
-            opacity: 0.4046688988095238;
             position: absolute;
             top: 2.9vh;
             right: 1.7vw;
-          }
-          .en {
-            margin: 0;
-            position: absolute;
-            top: 0.9vh;
-            right: 0.47vw;
+            .en {
+              margin: 0;
+              position: absolute;
+              top: 0.9vh;
+              right: 0.47vw;
+            }
           }
         }
       }
     }
-
     .header-wrapper {
       width: 100vw;
-      height: 100vh;
+      height: 88.1vh;
       .title {
-        padding: 24.8vh 17.25vw 0 17.25vw;
+        padding: 12.9vh 17.25vw 0 17.25vw;
         color: #faf8f2;
         font-family: "Playfair Display", serif;
         text-align: center;
@@ -184,13 +209,11 @@ body::-webkit-scrollbar-thumb {
     width: 100vw;
     height: 140vh;
     padding: 11.9vh 0 0 0;
-    box-shadow: 0px -20px 15px 8px rgba(31, 87, 147, 0.89);
-    background: linear-gradient(
-      180deg,
-      rgba(31, 88, 147, 1) 0%,
-      rgba(20, 73, 109, 1) 100%
-    );
-
+    box-shadow: 0px -20px 15px 8px rgba(14, 40, 66, 0.89);
+    background-color: rgba(31, 88, 147, 1);
+    background-size: 100vw 100vh;
+    background-repeat: repeat;
+    background-image: url(../assets/Header_overlay.png);
     .row {
       width: 67.7vw;
       margin: 0 15.85vw 0 15.85vw;
@@ -529,7 +552,7 @@ body::-webkit-scrollbar-thumb {
       text-align: center;
       border-top: 1px solid rgba(0, 0, 0, 0.29);
       div {
-        width: 18vw;
+        width: 25vw;
       }
     }
   }
