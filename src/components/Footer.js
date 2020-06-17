@@ -3,12 +3,8 @@ import React from "react";
 function Footer() {
   return (
     <div className="footer">
-      <h3
-        style={{ textDecoration: "underline", paddingTop: "10px", margin: "0" }}
-      >
-        MLJET
-      </h3>
-      <h6>EXPERIENCE</h6>
+      <h3>MLJET</h3>
+      <p>EXPERIENCE</p>
       <div className="informations">
         <div
           className="adresa"

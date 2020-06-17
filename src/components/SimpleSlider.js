@@ -34,7 +34,7 @@ class SimpleSlider extends Component {
       slidesToScroll: 1,
       initialSlide: 3,
       arrows: false,
-      autoplay: true,
+      autoplay: false,
       focusOnSelect: false,
     };
     return (

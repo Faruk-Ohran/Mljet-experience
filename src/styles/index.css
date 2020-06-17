@@ -15,13 +15,6 @@ body::-webkit-scrollbar {
   width: 5px;
 }
 
-body::-webkit-scrollbar:hover {
-  background: transparent;
-  width: 10px;
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-
 body::-webkit-scrollbar-thumb {
   display: block !important;
   background-color: var(--thumbBG);
@@ -51,201 +44,233 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.App .underline {
-  text-decoration: none;
-  position: relative;
-}
-
-.App .underline:after {
-  position: absolute;
-  height: 1px;
-  content: "";
-  top: 73px;
-  left: 0;
-  width: 100%;
-  color: #000;
-  background-color: black;
-}
-
 .App .header {
   background-image: url("https://www.arcgis.com/sharing/rest/content/items/779d8664f209431ca81dfd1e3d9d4c1e/resources/1567527975387.jpeg?w=3492");
   background-repeat: no-repeat;
-  background-size: 100% 900px;
-  height: 2227.7px;
+  background-size: 100vw 100vh;
+  height: 240vh;
+  position: relative;
 }
 
-.App .header .overlay {
-  background: #000000;
-  opacity: 55%;
-  width: 100%;
-  height: 2227.7px;
+.App .header .header-overlay {
+  width: 100vw;
+  height: 240vh;
   position: absolute;
   top: 0;
+  background-size: 100vw 100vh;
+  background-repeat: repeat;
+  background-image: url(../assets/Header_overlay.png);
+}
+
+.App .header .header-overlay .bg-lines {
+  background-image: url(../assets/bg_lines.png);
+  width: 100%;
+  height: 202.9vh;
+  background-size: 155vw 255vh;
+  opacity: 0.1;
+  position: absolute;
+  top: 37.1vh;
   bottom: 0;
   right: 0;
   left: 0;
 }
 
-.App .header .navbar {
-  color: #ffffff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#002233), to(rgba(1, 56, 84, 0)));
-  background: linear-gradient(180deg, #002233 0%, rgba(1, 56, 84, 0) 100%);
-  width: 100%;
-  height: 64px;
-  fill: rgba(1, 56, 84, 0);
-}
-
-.App .header .navbar .buttons {
-  text-align: right;
+.App .header .header-overlay .navigation {
+  width: 100vw;
+  height: 11.9vh;
+  padding: 2.9vh 1.7vw 0 1.7vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  position: relative;
-  padding: 0;
-  height: 32px;
-}
-
-.App .header .navbar .buttons .nav-item,
-.App .header .navbar .buttons .nav-link {
-  height: 30px;
   color: #ffffff;
-  font-family: NunitoSans;
-  font-size: 18px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#002233), to(rgba(1, 56, 84, 0)));
+  background: linear-gradient(180deg, #002233 0%, rgba(1, 56, 84, 0) 100%);
+}
+
+.App .header .header-overlay .navigation .brand {
+  width: 30vw;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.App .header .header-overlay .navigation .brand h3 {
+  margin: 0;
+  width: 30vw;
+  font-size: 4.4vh;
+  text-decoration: underline;
+  letter-spacing: 0.1vw;
+}
+
+.App .header .header-overlay .navigation .brand h6 {
+  width: 30vw;
+  font-size: 1.4vh;
+  letter-spacing: 0.29vw;
+}
+
+.App .header .header-overlay .navigation .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 66.6vw;
+}
+
+.App .header .header-overlay .navigation .buttons a {
+  height: 2.3vh;
+  margin: 1vh 3vw 0 0;
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.67vh;
+  line-height: 2.1vh;
+  font-weight: 400;
   text-align: center;
-  padding: 0 10px 0 10px;
-  line-height: 32px;
 }
 
-.App .header .navbar .buttons .dropdown-item:active {
-  background-color: #f8f9fa;
-  color: black;
+.App .header .header-overlay .navigation .buttons .kako-do-mljeta {
+  margin-right: 6vw;
 }
 
-.App .header .navbar .buttons .dropdown-menu {
-  opacity: 0;
-  margin: 0 10px 0 10px;
-}
-
-.App .header .navbar .buttons .show {
-  opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.App .header .navbar .oval {
+.App .header .header-overlay .navigation .buttons .oval {
+  width: 2.188vw;
+  height: 3.89vh;
   border: 1px solid #ffffff;
   border-radius: 100%;
   opacity: 0.4046688988095238;
-  width: 32px;
-  height: 32px;
   position: absolute;
-  right: 0;
+  top: 2.9vh;
+  right: 1.7vw;
 }
 
-.App .header .navbar .oval .en {
-  color: #ffffff;
-  font-family: NunitoSans;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
+.App .header .header-overlay .navigation .buttons .en {
   margin: 0;
+  position: absolute;
+  top: 0.9vh;
+  right: 0.47vw;
 }
 
-.App .header .container .title {
+.App .header .header-wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.App .header .header-wrapper .title {
+  padding: 24.8vh 17.25vw 0 17.25vw;
+  color: #faf8f2;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.App .header .header-wrapper .title h1 {
+  width: 49.6vw;
+  height: 17.8vh;
+  font-weight: 700;
+  font-size: 7.4vh;
+  line-height: 8vh;
+  margin: 0 auto 0 auto;
+}
+
+.App .header .header-wrapper .sub-text {
   color: #faf8f2;
   text-align: center;
-  margin: 0 auto 0 auto;
-  padding-top: 100px;
+  padding: 4.5vh 33.55vw 0 33.55vw;
 }
 
-.App .header .container .title h1 {
-  color: #faf8f2;
-  font-family: PlayfairDisplay;
-  font-size: 79.73px;
-  font-weight: bold;
-}
-
-.App .header .container .sub-text {
-  color: #faf8f2;
-  padding: 40px 0 30px 0;
-  width: 625px;
-  text-align: center;
-  margin: 0 auto 0 auto;
-}
-
-.App .header .container .sub-text p {
-  font-size: 18.94px;
+.App .header .header-wrapper .sub-text p {
   font-weight: 300;
-  line-height: 23px;
-  font-family: NunitoSans;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.7vh;
+  line-height: 2.15vh;
+  height: 8.7vh;
+  width: 32.6vw;
+  margin: 0 auto 0 auto;
 }
 
-.App .header .container .eat-stay-amusement .rectangle div {
+.App .header .header-wrapper .eat-stay-amusement {
+  padding: 12.2vh 0 0 0;
+  margin: 0 15.32vw 0 14.6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .header .header-wrapper .eat-stay-amusement .rectangle {
+  width: 24vw;
+}
+
+.App .header .header-wrapper .eat-stay-amusement .rectangle div {
   text-align: center;
   color: #ffffff;
-  padding-top: 10px;
-  font-family: PlayfairDisplay;
+  padding-top: 1.9vh;
+  font-family: "Playfair Display", serif;
 }
 
-.App .header .container .eat-stay-amusement .rectangle div h5 {
-  font-size: 25.25px;
-  line-height: 30px;
-  font-weight: bold;
+.App .header .header-wrapper .eat-stay-amusement .rectangle div h5 {
+  font-size: 2.4vh;
+  line-height: 2.8vh;
+  font-weight: 700;
 }
 
-.App .header .container .eat-stay-amusement .rectangle .rectangle-image {
+.App .header .header-wrapper .eat-stay-amusement .rectangle .rectangle-image {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 252.5px;
-}
-
-.App .bg-lines {
-  background-image: url(../assets/bg_lines.png);
-  background-size: 1900px;
-  width: 100%;
-  opacity: 0.1;
-  position: absolute;
-  top: 400px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 1828px;
+  background-size: 100% 100%;
+  width: 21.05vw;
+  height: 23.35vh;
+  margin: 0 auto 0 auto;
 }
 
 .App .wrapper {
-  width: 100%;
-  height: 1362px;
-  -webkit-box-shadow: 0px -40px 15px 8px #1f5893;
-          box-shadow: 0px -40px 15px 8px #1f5893;
+  width: 100vw;
+  height: 140vh;
+  padding: 11.9vh 0 0 0;
+  -webkit-box-shadow: 0px -20px 15px 8px rgba(31, 87, 147, 0.89);
+          box-shadow: 0px -20px 15px 8px rgba(31, 87, 147, 0.89);
   background: -webkit-gradient(linear, left top, left bottom, from(#1f5893), to(#14496d));
   background: linear-gradient(180deg, #1f5893 0%, #14496d 100%);
-  padding-top: 100px;
 }
 
-.App .wrapper .background {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 2px;
+.App .wrapper .row {
+  width: 67.7vw;
+  margin: 0 15.85vw 0 15.85vw;
 }
 
-.App .wrapper .background:hover {
-  opacity: 0.9;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.App .wrapper .info {
+.App .wrapper .row .info {
+  padding: 2.8vh 1.65vw 2.8vh 1.65vw;
   background-color: #faf8f2;
   border-radius: 2px;
+  text-align: left;
 }
 
-.App .wrapper .info:hover {
+.App .wrapper .row .info p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.7vh;
+  line-height: 2.2vh;
+}
+
+.App .wrapper .row .info .date {
+  color: #363434;
+  font-size: 1.67vh;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.6vh;
+  opacity: 0.5;
+}
+
+.App .wrapper .row .info .date:hover {
+  opacity: 1;
+}
+
+.App .wrapper .row .info h3 {
+  color: #717171;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 4.1vh;
+  line-height: 5vh;
+}
+
+.App .wrapper .row .info:hover {
   cursor: pointer;
   -webkit-box-shadow: inset 0px -15px 15px 0px rgba(31, 87, 147, 0.5);
           box-shadow: inset 0px -15px 15px 0px rgba(31, 87, 147, 0.5);
@@ -253,76 +278,173 @@ body::-webkit-scrollbar-thumb {
   transition: 0.3s;
 }
 
+.App .wrapper .row .background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 2px;
+  width: 42.45vw;
+  height: 45.6vh;
+}
+
+.App .wrapper .row .background:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.App .wrapper .row .two-pictures {
+  width: 32.9vw;
+  padding: 3.4vh 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .wrapper .row .two-pictures .background {
+  width: 50%;
+  height: 22.3vh;
+}
+
+.App .wrapper .row .two-pictures .info {
+  width: 50%;
+}
+
+.App .wrapper .row .two-pictures .info h3 {
+  font-size: 2.25vh;
+  line-height: 2.8vh;
+}
+
+.App .wrapper .row .three-pictures {
+  width: 21.45vw;
+  height: 45.6vh;
+  padding-top: 3.4vh;
+}
+
+.App .wrapper .row .three-pictures .background {
+  width: 21.45vw;
+  height: 26.7vh;
+}
+
+.App .wrapper .row .three-pictures .info {
+  width: 21.45vw;
+  height: 18.9vh;
+}
+
+.App .wrapper .row .three-pictures .info h3 {
+  font-size: 2.25vh;
+  line-height: 2.8vh;
+}
+
+.App .about {
+  z-index: 2;
+  position: relative;
+}
+
 .App .about .w-70 {
   position: absolute;
-  width: 70%;
-  height: 1350px;
+  width: 68.3vw;
+  height: 200vh;
   top: 0;
   left: 0;
   background-color: #f9f4e9;
   z-index: -1;
 }
 
-.App .about .container .slider {
-  width: 100%;
-  height: 224.35px;
-  padding: 50px 0 0 0;
+.App .about .about-h2 {
+  padding: 11.9vh 0 0 15.85vw;
 }
 
-.App .about .container .slider .slick-track {
-  height: 300px;
+.App .about .about-h2 h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  opacity: 0.7;
 }
 
-.App .about .container .slider .slick-active {
-  margin: 0 10px 0 10px;
+.App .about .about-h2 h2:before,
+.App .about .about-h2 h2:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 20%;
+  height: 2px;
+  content: "\a0";
+  background-color: black;
+  opacity: 0.7;
 }
 
-.App .about .container .slider img {
-  width: 370px;
-  margin: 0;
+.App .about .about-h2 h2:after {
+  visibility: hidden;
 }
 
-.App .about .container .slider .slick-slide .slick-track,
-.App .about .container .slider .slick-slider,
-.App .about .container .slider .slick-list {
-  height: 224.35px;
+.App .about .about-h2 h2:before {
+  margin-left: -25%;
 }
 
-.App .about .container .quote {
-  width: 100%;
-  height: 216px;
-  margin: 150px 0 0 0;
+.App .about .about-h2 p {
+  margin: 5.45vh 0 0 8.05vw;
   color: #363434;
-  font-family: PlayfairDisplay;
-  font-size: 59.81px;
-  line-height: 72px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.67vh;
+  line-height: 2.2vh;
+  width: 32.05vw;
+  height: 20vh;
+  text-align: left;
+}
+
+.App .about .video {
+  height: 94vh;
+  padding: 0 8.25vw 0 8.25vw;
+}
+
+.App .about .slider {
+  width: 100%;
+  height: 70vh;
+  background-color: black;
+}
+
+.App .about .quote {
+  width: 63.15vw;
+  height: 21.2vh;
+  color: #363434;
   opacity: 0.25;
   text-align: center;
+  margin: 9.3vh 19vw 0 19vw;
+  line-height: 6.7vh;
 }
 
-.App .about .container .quote p {
-  margin: 0;
+.App .about .quote h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 5.5vh;
+  font-weight: 700;
 }
 
-.App .about .container .banner {
-  width: 100%;
-  height: 250px;
+.App .about .quote p {
+  font-size: 3vh;
+  font-family: "Playfair Display", serif;
+}
+
+.App .about .banner {
+  width: 62.5vw;
+  height: 27.8vh;
   background-image: url(../assets/1-Banner_1200x300.png);
   background-position: center;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin: 100px 0 0 0;
+  margin: 9.3vh 18.8vw 0 18.8vw;
 }
 
 .App .about .video-graphic {
   background-image: url(../assets/Background_graphic.png);
   background-repeat: no-repeat;
-  background-size: 3000px 400px;
+  background-size: 156.3vw 73.1vh;
   opacity: 0.1;
-  width: 2000px;
-  height: 400px;
+  width: 156.3vw;
+  height: 73.1vh;
   position: absolute;
-  left: -150px;
+  left: -13.9vh;
   right: 0;
   bottom: 0;
   z-index: -1;
@@ -330,8 +452,8 @@ body::-webkit-scrollbar-thumb {
 
 .App .info-last {
   z-index: 1;
-  width: 100%;
-  height: 800px;
+  width: 100vw;
+  height: 111.2vh;
   background-image: url(../assets/Bg_img.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -342,77 +464,115 @@ body::-webkit-scrollbar-thumb {
 .App .info-last .bitmap {
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 565px;
+  left: -11.55vw;
+  right: 11.55vw;
+  bottom: 40vh;
   opacity: 0.15;
   background-image: url(../assets/Bitmap.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
+  background-size: 100vw;
 }
 
 .App .info-last .compass {
   position: absolute;
-  top: 200px;
-  right: 15%;
+  top: 10vh;
+  right: 15vw;
   background-image: url(../assets/compass.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 200px;
-  height: 200px;
+  width: 13.7vw;
+  height: 24.4vh;
   z-index: 100;
   opacity: 10%;
   -webkit-animation: spin 2s linear infinite alternate;
           animation: spin 2s linear infinite alternate;
 }
 
+.App .info-last .title-mljet {
+  padding: 14.3vh 18.8vw 0 18.8vw;
+}
+
 .App .info-last .title-mljet h1 {
   color: #363434;
-  font-family: PlayfairDisplay;
-  font-size: 44.87px;
-  line-height: 54px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 4.1vh;
+  line-height: 5vh;
   opacity: 0.75;
 }
 
-.App .info-last button {
-  margin: 50px 0 0 0;
+.App .info-last .text-mljet {
+  margin: 9.3vh 18.8vw 0 18.8vw;
+}
+
+.App .info-last .text-mljet p {
+  width: 28.45vw;
+  height: 10vh;
+  margin: 0 auto 0 auto;
+  color: #363434;
+  font-family: NunitoSans;
+  font-weight: 300;
+  font-size: 1.7vh;
+  line-height: 2.2vh;
+  text-align: left;
+}
+
+.App .info-last .text-mljet button {
+  width: 12.65vw;
+  height: 6.4vh;
+  margin: 4.6vh 0 0 0;
   border: 1px solid #373434;
   border-radius: 2px;
   opacity: 0.5;
-  width: 121.5px;
-  height: 34.5px;
   background-color: Transparent;
   background-repeat: no-repeat;
 }
 
-.App .info-last button:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+.App .info-last .text-mljet button:hover {
+  background-color: white;
+}
+
+.App .info-last .line {
+  width: 100vw;
+  height: 1.3vh;
+  background-color: #faf8f2;
+  opacity: 0.5279947916666666;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .App .footer {
-  width: 100%;
-  height: 207px;
+  width: 100vw;
+  height: 31vh;
   background-color: #eee5d6;
   text-align: center;
   position: relative;
 }
 
+.App .footer h3 {
+  padding: 3.5vh 0 0 0;
+  margin: 0;
+  text-decoration: underline;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.App .footer p {
+  margin: 0;
+  font-size: 3.2vh;
+}
+
 .App .footer .informations {
-  width: 900px;
-  margin: 15px auto 15px auto;
+  width: 50vw;
+  margin: 3.5vh auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #363434;
-  font-family: NunitoSans;
-  font-size: 14.21px;
-  line-height: 17px;
   text-align: center;
 }
 
@@ -424,13 +584,39 @@ body::-webkit-scrollbar-thumb {
 .App .footer .informations .adresa,
 .App .footer .informations .boutige-resort,
 .App .footer .informations .contact-info {
-  width: 300px;
+  width: 15.65vw;
+  color: #363434;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.3vh;
+  line-height: 1.6vh;
+}
+
+.App .footer .social-media-icons {
+  width: 10.0521vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3.5vh auto 0 auto;
+}
+
+.App .footer .social-media-icons .instagram,
+.App .footer .social-media-icons .facebook,
+.App .footer .social-media-icons .tripadvisor {
+  width: 2.188vw;
+  height: 3.89vh;
+  background-color: #373434;
+  border-radius: 100%;
+  opacity: 0.25;
 }
 
 .App .footer .copy-right {
   width: 100%;
-  height: 20px;
-  padding: 0 16px 0 16px;
+  height: 1.9vh;
+  padding: 0 0.85vw 0 0.85vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,35 +626,14 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   bottom: 0;
   color: #717171;
-  font-family: NunitoSans;
-  font-size: 14.21px;
-  line-height: 17px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.3vh;
+  line-height: 1.6vh;
   text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.29);
 }
 
 .App .footer .copy-right div {
-  width: 345px;
-}
-
-.App .social-media-icons {
-  width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 auto 0 auto;
-}
-
-.App .social-media-icons .instagram,
-.App .social-media-icons .facebook,
-.App .social-media-icons .tripadvisor {
-  background-color: #373434;
-  border-radius: 100%;
-  opacity: 0.25;
-  width: 42px;
-  height: 42px;
+  width: 18vw;
 }
 /*# sourceMappingURL=index.css.map */

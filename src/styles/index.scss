@@ -12,11 +12,6 @@ body::-webkit-scrollbar {
   background: transparent;
   width: 5px;
 }
-body::-webkit-scrollbar:hover {
-  background: transparent;
-  width: 10px;
-  transition: all 2s;
-}
 body::-webkit-scrollbar-thumb {
   display: block !important;
   background-color: var(--thumbBG);
@@ -34,249 +29,349 @@ body::-webkit-scrollbar-thumb {
 }
 
 .App {
-  .underline {
-    text-decoration: none;
-    position: relative;
-  }
-
-  .underline:after {
-    position: absolute;
-    height: 1px;
-    content: "";
-    top: 73px;
-    left: 0;
-    width: 100%;
-    color: #000;
-    background-color: black;
-  }
   .header {
     background-image: url("https://www.arcgis.com/sharing/rest/content/items/779d8664f209431ca81dfd1e3d9d4c1e/resources/1567527975387.jpeg?w=3492");
     background-repeat: no-repeat;
-    background-size: 100% 900px;
-    height: 2227.7px;
-    .overlay {
-      background: #000000;
-      opacity: 55%;
-      width: 100%;
-      height: 2227.7px;
+    background-size: 100vw 100vh;
+    height: 240vh;
+    position: relative;
+    .header-overlay {
+      width: 100vw;
+      height: 240vh;
       position: absolute;
       top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-    }
-    .navbar {
-      color: #ffffff;
-      background: linear-gradient(180deg, #002233 0%, rgba(1, 56, 84, 0) 100%);
-      width: 100%;
-      height: 64px;
-      fill: rgba(1, 56, 84, 0);
-      .buttons {
-        text-align: right;
-        display: flex;
-        justify-content: space-evenly;
-        position: relative;
-        padding: 0;
-        height: 32px;
-        .nav-item,
-        .nav-link {
-          height: 30px;
-          color: #ffffff;
-          font-family: NunitoSans;
-          font-size: 18px;
-          text-align: center;
-          padding: 0 10px 0 10px;
-          line-height: 32px;
-        }
-        .dropdown-item:active {
-          background-color: rgb(248, 249, 250);
-          color: black;
-        }
-        .dropdown-menu {
-          opacity: 0;
-          margin: 0 10px 0 10px;
-        }
-        .show {
-          opacity: 1;
-          transition: 0.3s;
-        }
-      }
-      .oval {
-        border: 1px solid #ffffff;
-        border-radius: 100%;
-        opacity: 0.4046688988095238;
-        width: 32px;
-        height: 32px;
+      background-size: 100vw 100vh;
+      background-repeat: repeat;
+      background-image: url(../assets/Header_overlay.png);
+      .bg-lines {
+        background-image: url(../assets/bg_lines.png);
+        width: 100%;
+        height: 202.9vh;
+        background-size: 155vw 255vh;
+        opacity: 0.1;
         position: absolute;
+        top: 37.1vh;
+        bottom: 0;
         right: 0;
-        .en {
-          color: #ffffff;
-          font-family: NunitoSans;
-          font-size: 18px;
-          line-height: 30px;
-          text-align: center;
-          margin: 0;
+        left: 0;
+      }
+      .navigation {
+        width: 100vw;
+        height: 11.9vh;
+        padding: 2.9vh 1.7vw 0 1.7vw;
+        display: flex;
+        color: #ffffff;
+        background: linear-gradient(
+          180deg,
+          #002233 0%,
+          rgba(1, 56, 84, 0) 100%
+        );
+        .brand {
+          width: 30vw;
+          font-family: "Playfair Display", serif;
+          font-weight: 700;
+          h3 {
+            margin: 0;
+            width: 30vw;
+            font-size: 4.4vh;
+            text-decoration: underline;
+            letter-spacing: 0.1vw;
+          }
+          h6 {
+            width: 30vw;
+            font-size: 1.4vh;
+            letter-spacing: 0.29vw;
+          }
+        }
+        .buttons {
+          display: flex;
+          justify-content: flex-end;
+          width: 66.6vw;
+          a {
+            height: 2.3vh;
+            margin: 1vh 3vw 0 0;
+            color: #ffffff;
+            font-family: "Nunito Sans", sans-serif;
+            font-size: 1.67vh;
+            line-height: 2.1vh;
+            font-weight: 400;
+            text-align: center;
+          }
+          .kako-do-mljeta {
+            margin-right: 6vw;
+          }
+          .oval {
+            width: 2.188vw;
+            height: 3.89vh;
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            opacity: 0.4046688988095238;
+            position: absolute;
+            top: 2.9vh;
+            right: 1.7vw;
+          }
+          .en {
+            margin: 0;
+            position: absolute;
+            top: 0.9vh;
+            right: 0.47vw;
+          }
         }
       }
     }
-    .container {
+
+    .header-wrapper {
+      width: 100vw;
+      height: 100vh;
       .title {
+        padding: 24.8vh 17.25vw 0 17.25vw;
         color: #faf8f2;
+        font-family: "Playfair Display", serif;
         text-align: center;
-        margin: 0 auto 0 auto;
-        padding-top: 100px;
         h1 {
-          color: #faf8f2;
-          font-family: PlayfairDisplay;
-          font-size: 79.73px;
-          font-weight: bold;
+          width: 49.6vw;
+          height: 17.8vh;
+          font-weight: 700;
+          font-size: 7.4vh;
+          line-height: 8vh;
+          margin: 0 auto 0 auto;
         }
       }
       .sub-text {
         color: #faf8f2;
-        padding: 40px 0 30px 0;
-        width: 625px;
         text-align: center;
-        margin: 0 auto 0 auto;
+        padding: 4.5vh 33.55vw 0 33.55vw;
         p {
-          font-size: 18.94px;
           font-weight: 300;
-          line-height: 23px;
-          font-family: NunitoSans;
+          font-family: "Nunito Sans", sans-serif;
+          font-size: 1.7vh;
+          line-height: 2.15vh;
+          height: 8.7vh;
+          width: 32.6vw;
+          margin: 0 auto 0 auto;
         }
       }
       .eat-stay-amusement {
+        padding: 12.2vh 0 0 0;
+        margin: 0 15.32vw 0 14.6vw;
+        display: flex;
         .rectangle {
+          width: 24vw;
           div {
             text-align: center;
             color: #ffffff;
-            padding-top: 10px;
-            font-family: PlayfairDisplay;
+            padding-top: 1.9vh;
+            font-family: "Playfair Display", serif;
             h5 {
-              font-size: 25.25px;
-              line-height: 30px;
-              font-weight: bold;
+              font-size: 2.4vh;
+              line-height: 2.8vh;
+              font-weight: 700;
             }
           }
           .rectangle-image {
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
-            height: 252.5px;
+            background-size: 100% 100%;
+            width: 21.05vw;
+            height: 23.35vh;
+            margin: 0 auto 0 auto;
           }
         }
       }
     }
   }
-  .bg-lines {
-    background-image: url(../assets/bg_lines.png);
-    background-size: 1900px;
-    width: 100%;
-    opacity: 0.1;
-    position: absolute;
-    top: 400px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 1828px;
-  }
   .wrapper {
-    width: 100%;
-    height: 1362px;
-    box-shadow: 0px -40px 15px 8px rgb(31, 88, 147);
+    width: 100vw;
+    height: 140vh;
+    padding: 11.9vh 0 0 0;
+    box-shadow: 0px -20px 15px 8px rgba(31, 87, 147, 0.89);
     background: linear-gradient(
       180deg,
       rgba(31, 88, 147, 1) 0%,
       rgba(20, 73, 109, 1) 100%
     );
-    padding-top: 100px;
 
-    .background {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-radius: 2px;
-    }
-    .background:hover {
-      opacity: 0.9;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .info {
-      background-color: #faf8f2;
-      border-radius: 2px;
-    }
-    .info:hover {
-      cursor: pointer;
-      box-shadow: inset 0px -15px 15px 0px rgba(31, 87, 147, 0.5);
-      transition: 0.3s;
+    .row {
+      width: 67.7vw;
+      margin: 0 15.85vw 0 15.85vw;
+      .info {
+        padding: 2.8vh 1.65vw 2.8vh 1.65vw;
+        background-color: #faf8f2;
+        border-radius: 2px;
+        text-align: left;
+        p {
+          font-family: "Nunito Sans", sans-serif;
+          font-weight: 300;
+          font-size: 1.7vh;
+          line-height: 2.2vh;
+        }
+
+        .date {
+          color: #363434;
+          font-size: 1.67vh;
+          font-family: "Nunito Sans", sans-serif;
+          line-height: 1.6vh;
+          opacity: 0.5;
+        }
+        .date:hover {
+          opacity: 1;
+        }
+        h3 {
+          color: #717171;
+          font-family: "Playfair Display", serif;
+          font-weight: 700;
+          font-size: 4.1vh;
+          line-height: 5vh;
+        }
+      }
+      .info:hover {
+        cursor: pointer;
+        box-shadow: inset 0px -15px 15px 0px rgba(31, 87, 147, 0.5);
+        transition: 0.3s;
+      }
+      .background {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 2px;
+        width: 42.45vw;
+        height: 45.6vh;
+      }
+      .background:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .two-pictures {
+        width: 32.9vw;
+        padding: 3.4vh 0 0 0;
+        display: flex;
+        .background {
+          width: 50%;
+          height: 22.3vh;
+        }
+        .info {
+          width: 50%;
+          h3 {
+            font-size: 2.25vh;
+            line-height: 2.8vh;
+          }
+        }
+      }
+      .three-pictures {
+        width: 21.45vw;
+        height: 45.6vh;
+        padding-top: 3.4vh;
+        .background {
+          width: 21.45vw;
+          height: 26.7vh;
+        }
+        .info {
+          width: 21.45vw;
+          height: 18.9vh;
+          h3 {
+            font-size: 2.25vh;
+            line-height: 2.8vh;
+          }
+        }
+      }
     }
   }
 
   .about {
+    z-index: 2;
+    position: relative;
     .w-70 {
       position: absolute;
-      width: 70%;
-      height: 1350px;
+      width: 68.3vw;
+      height: 200vh;
       top: 0;
       left: 0;
       background-color: #f9f4e9;
       z-index: -1;
     }
-    .container {
-      .slider {
-        width: 100%;
-        height: 224.35px;
-        padding: 50px 0 0 0;
-        .slick-track {
-          height: 300px;
-        }
-        .slick-active {
-          margin: 0 10px 0 10px;
-        }
-        img {
-          width: 370px;
-          margin: 0;
-        }
-        .slick-slide .slick-track,
-        .slick-slider,
-        .slick-list {
-          height: 224.35px;
-        }
+    .about-h2 {
+      padding: 11.9vh 0 0 15.85vw;
+      h2 {
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        opacity: 0.7;
       }
-      .quote {
-        width: 100%;
-        height: 216px;
-        margin: 150px 0 0 0;
+      h2:before,
+      h2:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 20%;
+        height: 2px;
+        content: "\a0";
+        background-color: black;
+        opacity: 0.7;
+      }
+      h2:after {
+        visibility: hidden;
+      }
+      h2:before {
+        margin-left: -25%;
+      }
+      p {
+        margin: 5.45vh 0 0 8.05vw;
         color: #363434;
-        font-family: PlayfairDisplay;
-        font-size: 59.81px;
-        line-height: 72px;
-        opacity: 0.25;
-        text-align: center;
-        p {
-          margin: 0;
-        }
-      }
-      .banner {
-        width: 100%;
-        height: 250px;
-        background-image: url(../assets/1-Banner_1200x300.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 100px 0 0 0;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 300;
+        font-size: 1.67vh;
+        line-height: 2.2vh;
+        width: 32.05vw;
+        height: 20vh;
+        text-align: left;
       }
     }
+    .video {
+      height: 94vh;
+      padding: 0 8.25vw 0 8.25vw;
+    }
+    .slider {
+      width: 100%;
+      height: 70vh;
+      background-color: black;
+    }
+    .quote {
+      width: 63.15vw;
+      height: 21.2vh;
+      color: #363434;
+      opacity: 0.25;
+      text-align: center;
+      margin: 9.3vh 19vw 0 19vw;
+      line-height: 6.7vh;
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 5.5vh;
+        font-weight: 700;
+      }
+      p {
+        font-size: 3vh;
+        font-family: "Playfair Display", serif;
+      }
+    }
+    .banner {
+      width: 62.5vw;
+      height: 27.8vh;
+      background-image: url(../assets/1-Banner_1200x300.png);
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      margin: 9.3vh 18.8vw 0 18.8vw;
+    }
+
     .video-graphic {
       background-image: url(../assets/Background_graphic.png);
       background-repeat: no-repeat;
-      background-size: 3000px 400px;
+      background-size: 156.3vw 73.1vh;
       opacity: 0.1;
-      width: 2000px;
-      height: 400px;
+      width: 156.3vw;
+      height: 73.1vh;
       position: absolute;
-      left: -150px;
+      left: -13.9vh;
       right: 0;
       bottom: 0;
       z-index: -1;
@@ -284,8 +379,8 @@ body::-webkit-scrollbar-thumb {
   }
   .info-last {
     z-index: 1;
-    width: 100%;
-    height: 800px;
+    width: 100vw;
+    height: 111.2vh;
     background-image: url(../assets/Bg_img.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,71 +389,100 @@ body::-webkit-scrollbar-thumb {
     .bitmap {
       position: absolute;
       top: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 565px;
+      left: -11.55vw;
+      right: 11.55vw;
+      bottom: 40vh;
       opacity: 0.15;
       background-image: url(../assets/Bitmap.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-blend-mode: multiply;
+      background-size: 100vw;
     }
     .compass {
       position: absolute;
-      top: 200px;
-      right: 15%;
+      top: 10vh;
+      right: 15vw;
       background-image: url(../assets/compass.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      width: 200px;
-      height: 200px;
+      width: 13.7vw;
+      height: 24.4vh;
       z-index: 100;
       opacity: 10%;
       animation: spin 2s linear infinite alternate;
     }
 
     .title-mljet {
+      padding: 14.3vh 18.8vw 0 18.8vw;
       h1 {
         color: #363434;
-        font-family: PlayfairDisplay;
-        font-size: 44.87px;
-        line-height: 54px;
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        font-size: 4.1vh;
+        line-height: 5vh;
         opacity: 0.75;
       }
     }
-
-    button {
-      margin: 50px 0 0 0;
-      border: 1px solid #373434;
-      border-radius: 2px;
-      opacity: 0.5;
-      width: 121.5px;
-      height: 34.5px;
-      background-color: Transparent;
-      background-repeat: no-repeat;
+    .text-mljet {
+      margin: 9.3vh 18.8vw 0 18.8vw;
+      p {
+        width: 28.45vw;
+        height: 10vh;
+        margin: 0 auto 0 auto;
+        color: #363434;
+        font-family: NunitoSans;
+        font-weight: 300;
+        font-size: 1.7vh;
+        line-height: 2.2vh;
+        text-align: left;
+      }
+      button {
+        width: 12.65vw;
+        height: 6.4vh;
+        margin: 4.6vh 0 0 0;
+        border: 1px solid #373434;
+        border-radius: 2px;
+        opacity: 0.5;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+      }
+      button:hover {
+        background-color: white;
+      }
     }
-    button:hover {
-      background-color: rgba(255, 255, 255, 0.5);
+
+    .line {
+      width: 100vw;
+      height: 1.3vh;
+      background-color: #faf8f2;
+      opacity: 0.5279947916666666;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
     }
   }
   .footer {
-    width: 100%;
-    height: 207px;
+    width: 100vw;
+    height: 31vh;
     background-color: #eee5d6;
     text-align: center;
     position: relative;
-
+    h3 {
+      padding: 3.5vh 0 0 0;
+      margin: 0;
+      text-decoration: underline;
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+    }
+    p {
+      margin: 0;
+      font-size: 3.2vh;
+    }
     .informations {
-      width: 900px;
-      margin: 15px auto 15px auto;
+      width: 50vw;
+      margin: 3.5vh auto 0 auto;
       display: flex;
       justify-content: space-between;
-      color: #363434;
-      font-family: NunitoSans;
-      font-size: 14.21px;
-      line-height: 17px;
       text-align: center;
       .boutige-resort {
         border-right: 1px solid black;
@@ -367,41 +491,46 @@ body::-webkit-scrollbar-thumb {
       .adresa,
       .boutige-resort,
       .contact-info {
-        width: 300px;
+        width: 15.65vw;
+        color: #363434;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1.3vh;
+        line-height: 1.6vh;
+      }
+    }
+    .social-media-icons {
+      width: 10.0521vw;
+      display: flex;
+      justify-content: space-between;
+      margin: 3.5vh auto 0 auto;
+      .instagram,
+      .facebook,
+      .tripadvisor {
+        width: 2.188vw;
+        height: 3.89vh;
+        background-color: #373434;
+        border-radius: 100%;
+        opacity: 0.25;
       }
     }
     .copy-right {
       width: 100%;
-      height: 20px;
-      padding: 0 16px 0 16px;
+      height: 1.9vh;
+      padding: 0 0.85vw 0 0.85vw;
       display: flex;
       justify-content: space-between;
       position: absolute;
       bottom: 0;
       color: #717171;
-      font-family: NunitoSans;
-      font-size: 14.21px;
-      line-height: 17px;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 1.3vh;
+      line-height: 1.6vh;
       text-align: center;
       border-top: 1px solid rgba(0, 0, 0, 0.29);
       div {
-        width: 345px;
+        width: 18vw;
       }
-    }
-  }
-  .social-media-icons {
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto 0 auto;
-    .instagram,
-    .facebook,
-    .tripadvisor {
-      background-color: #373434;
-      border-radius: 100%;
-      opacity: 0.25;
-      width: 42px;
-      height: 42px;
     }
   }
 }
