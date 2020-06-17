@@ -29,7 +29,7 @@ class SimpleSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       variableWidth: true,
-      autoplay: false,
+      autoplay: true,
       speed: 1000,
     };
     return (
